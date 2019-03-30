@@ -23,4 +23,5 @@ Route::group(['prefix' => 'admin'], function(){
 
 Auth::routes();
 
+Route::get('taskForm', 'TasksController@index')->name('task.form');
 Route::get('/home', 'HomeController@index')->name('home');
